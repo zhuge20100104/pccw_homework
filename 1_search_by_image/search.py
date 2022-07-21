@@ -52,7 +52,9 @@ class TestsRunner(object):
     def run_case(self, test_ele):
         image_span = self.driver.find_element_by_xpath("//span[@class='tdPRye']")
         image_span.click()
-
+        # 此处为测试代码，实际工程中应使用waitForCondition函数代替。
+        # 等待的条件包括，页面js加载完成
+        # 或者特定元素visible
         time.sleep(1)
 
         image_input = self.driver.find_element_by_id("Ycyxxc")
