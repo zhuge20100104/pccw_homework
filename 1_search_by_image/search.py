@@ -99,5 +99,5 @@ if __name__ == '__main__':
     for case in cases:
         runner.init_web_driver()
         runner.run_case(case)
-        runner.quit_driver()
+    runner.quit_driver()
 
